@@ -67,15 +67,20 @@
 									<h2>Registration</h2>
 									<span class="byline">Registration account</span>
                                 </header>
-                                <form action="">
+                                <form action="" method="POST">
                                     <div class="registration_row">
                                         <label class="registration_label" for="firstname">First name:</label>
-                                        <input class="registration_input" id="firstname" name="firstname" type="text">
+                                        <input class="registration_input" id="firstname" name="firstname" type="text" placeholder="Enter your name.." required>
                                     </div>
                                     <div class="registration_row">
                                         <label class="registration_label" for="secondname">Second name:</label>
-                                        <input class="registration_input" id="secondname" name="secondname" type="text">
+                                        <input class="registration_input" id="secondname" name="secondname" type="text" placeholder="Enter your second name.." required>
                                     </div>
+                                    <div class="registration_row">
+                                        <label class="registration_label" for="age">Age:</label>
+                                        <input class="registration_input" id="age" name="age" type="number" min="16" max="100" placeholder="Enter your age.." required>
+                                    </div>
+                                    
                                     <div class="registration_row">
                                         <label class="registration_label" for="gender">Gender:</label>
                                         <select class="registration_input" id="gender" name="gender">
@@ -85,11 +90,11 @@
                                     </div>
                                     <div class="registration_row">
                                         <label class="registration_label" for="email">Email:</label>
-                                        <input class="registration_input" id="email" name="email" type="email">
+                                        <input class="registration_input" id="email" name="email" type="email" placeholder="Enter your email" required>
                                     </div>
                                     <div class="registration_row">
                                         <label class="registration_label" for="description">About myself:</label>
-										<textarea class="registration_textbox" id="description" name="description"></textarea>
+										<textarea class="registration_textbox" id="description" name="description" placeholder=" " required></textarea>
 										<div class="clearfix"></div>
 									</div>
 									
