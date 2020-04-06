@@ -16,6 +16,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="js/main.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -77,7 +78,7 @@
                                         <input class="registration_input" id="secondname" name="secondname" type="text" placeholder="Enter your second name.." required>
                                     </div>
                                     <div class="registration_row">
-                                        <label class="registration_label" for="age">Age:</label>
+                                        <label class="registration_label" for="age">How old are you?</label>
                                         <input class="registration_input" id="age" name="age" type="number" min="16" max="100" placeholder="Enter your age.." required>
                                     </div>
                                     
@@ -90,7 +91,8 @@
                                     </div>
                                     <div class="registration_row">
                                         <label class="registration_label" for="email">Email:</label>
-                                        <input class="registration_input" id="email" name="email" type="email" placeholder="Enter your email" required>
+                                        <input class="registration_input" id="email" name="email" type="email" placeholder="Enter your email">
+										<span class="error" aria-live="polite"></span>
                                     </div>
                                     <div class="registration_row">
                                         <label class="registration_label" for="description">About myself:</label>
@@ -179,6 +181,5 @@
 				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
 			</div>
 		</div>
-
 	</body>
 </html>
